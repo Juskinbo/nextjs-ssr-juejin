@@ -1,0 +1,37 @@
+//TODO
+//掘金app二维码页面
+.sticky {
+	cursor: pointer;
+	height: 74px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	background-color: var(--navbar-background-color);
+	margin-bottom: 24px;
+	.sticky-img {
+		flex: 0 0 auto;
+		margin-left: 0.625rem;
+		width: 3.125rem;
+		height: 3.125rem;
+	}
+	.words {
+		width: 0;
+		flex: 1 1 auto;
+		margin-left: 1rem;
+		.headline {
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-size: 0.875rem;
+			color: var(--sticky-title-color);
+			margin-bottom: 10px;
+		}
+		.desc {
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-size: 0.75rem;
+			color: var(--sticky-desc-color);
+		}
+	}
+}

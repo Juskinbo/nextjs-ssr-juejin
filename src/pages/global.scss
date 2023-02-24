@@ -1,0 +1,46 @@
+html[data-theme='dark'] {
+	--primary-color: #ffffff; //layout,navList等字体的主要颜色
+	--secondary-color: rgb(125, 125, 127); //label等信息的颜色
+	--body-background-color: rgb(19, 19, 19); //body的背景颜色
+	--navbar-font-hover: rgb(180, 180, 180); //navbar中标签鼠标经过时的颜色
+	--navbar-background-color: rgb(39, 38, 38); //layout,navList的背景颜色;
+	--link-color: rgb(19, 82, 163); //被选中标签/hover时的颜色
+	--layout-border-color: #fff; //layout边框颜色
+	--global-border-color: #494949; //文章组件的下边框颜色
+	--art-author-color: #ffffff; //文章作者名
+	--art-title-color: #fff;
+	--art-user-color: #ffffff;
+	--art-icon-color: rgb(125, 125, 127);
+	--sticky-title-color: rgb(255, 255, 255); //掘金二维码界面标题
+	--sticky-desc-color: #86909c; //掘金二维码界面描述
+	--art-content-color: rgb(125, 125, 127);
+	--art-nav-border-color: skyblue;
+	--user-link-hover: rgb(45, 45, 45); //排行榜鼠标经过时的颜色
+	--user-name-color: rgb(255, 255, 255);
+	--user-position-color: rgb(125, 125, 127);
+	--user-header-color: #fff;
+	--user-more-color: rgb(19, 82, 163); //完整榜单
+}
+
+html[data-theme='light'] {
+	--body-background-color: #f2f3f5; //body的背景颜色
+	--primary-color: #515767; //layout,navList等字体的主要颜色
+	--navbar-font-hover: #000; //navbar中标签鼠标经过时的颜色
+	--navbar-background-color: #fff; //layout,navList的背景颜色;
+	--link-color: #0070f3; //被选中标签/hover时的颜色
+	--layout-border-color: #eaeaea; //layout边框颜色
+	--art-title-color: #000;
+	--art-content-color: #86909c;
+	--art-user-color: #000;
+	--art-icon-color: #4e5969;
+	--global-border-color: #dddddd; //文章组件的下边框颜色
+	--secondary-color: #86909c; //label等信息的颜色
+	--art-author-color: #000; //文章作者名
+	--art-nav-border-color: #eaeaea;
+	--sticky-title-color: #1d2129; //掘金二维码界面标题
+	--sticky-desc-color: #86909c; //掘金二维码界面描述
+	--user-link-hover: #fbfbfb; //排行榜鼠标经过时的颜色
+	--user-name-color: #333333; //排行榜用户名信息
+	--user-position-color: #909090; //排行榜用户介绍
+	--user-more-color: #007fff; //完整榜单
+}

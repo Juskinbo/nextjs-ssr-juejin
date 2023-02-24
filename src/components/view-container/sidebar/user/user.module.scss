@@ -1,0 +1,63 @@
+//TODO
+//作者排行榜页面
+.user {
+	cursor: pointer;
+	background-color: var(--navbar-background-color);
+	.header {
+		color: var(--user-header-color);
+		padding: 0.625rem;
+		font-size: 0.875rem;
+		border-bottom: 1px solid var(--global-border-color);
+	}
+	
+
+	.link {
+		padding: 0.625rem;
+		display: flex;
+		align-items: center;
+		&:hover {
+			background-color: var(--user-link-hover);
+		}
+		.avatar {
+			flex: 0 0 auto;
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 50%;
+			margin-right: 0.625rem;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.details {
+			flex: 1 1 auto;
+			width: 0;
+			.name {
+				font-size: 0.875rem;
+				color: var(--user-name-color);
+				margin-bottom: 0.3125rem;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			.position {
+				font-size: 0.75rem;
+				color: var(--user-position-color);
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+		}
+	}
+	.more {
+		border-top: 1px solid var(--global-border-color);
+		padding: 0.625rem;
+		text-align: center;
+		font-size: 0.875rem;
+		color: var(--user-more-color);
+		span {
+			font-weight: 900;
+		}
+	}
+}

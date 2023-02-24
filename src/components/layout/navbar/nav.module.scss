@@ -1,0 +1,106 @@
+@import "../../../pages/media.scss";
+
+// 变量
+$font-hover: var(--navbar-font-hover);
+$navHeight: 5rem;
+
+//样式
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: var(--navbar-background-color);
+  width: 100%;
+  height: $navHeight;
+  min-width: 60rem;
+  z-index: 2000;
+  border-bottom: 1px solid var(--global-border-color);
+
+  .nav-container {
+    width: 100%;
+    height: $navHeight;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    //logo图标，后续适配主题
+    .logo {
+      display: block;
+      width: auto;
+      height: 22px;
+    }
+    //首页导航项
+    .navlist-container {
+      height: $navHeight;
+      margin-left: 1.4375rem;
+
+      .nav {
+        width: 35rem;
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+        @include media-mini-mobile {
+          flex-flow: column nowrap;
+          width: auto;
+        }
+        li {
+          @include media-mini-mobile {
+            font-size: 1.125rem;
+            background-color: var(--navbar-background-color);
+            padding: 0 1rem;
+          }
+          flex: 1 1 auto;
+          position: relative;
+          font-size: 1rem;
+          color: var(--primary-color);
+          cursor: pointer;
+          text-align: center;
+
+          a {
+            display: inline-block;
+            height: $navHeight;
+            line-height: $navHeight;
+            &:hover {
+              border-bottom: 2.5px solid #1e80ff;
+              color: $font-hover;
+            }
+          }
+          .label {
+            text-align: center;
+            background-color: red;
+            border-radius: 5rem;
+            width: 55px;
+            position: absolute;
+            color: #fff;
+            right: -1.25rem;
+            top: 1.0625rem;
+            font-size: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  .light,
+  .dark {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+.navCheck {
+  display: none;
+  &:checked + label {
+    color: var(--link-color);
+  }
+}
+
+.logocontainer {
+  display: flex;
+  align-items: center;
+  span {
+    margin-left: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+  }
+}

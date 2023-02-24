@@ -1,0 +1,101 @@
+.art-container {
+  padding: 16px 16px;
+  // border-bottom: 1px solid var(--global-border-color);
+  border-top: 1px solid var(--global-border-color);
+  cursor: pointer;
+  //作者信息
+  .art-author-info {
+    span + span {
+      display: inline-block;
+      &::before {
+        display: inline-block;
+        margin: 0 0.5rem;
+        content: "|";
+        display: inline-block;
+      }
+    }
+    .author {
+      color: var(--art-author-color);
+    }
+    .date,
+    .label {
+      color: var(--secondary-color);
+    }
+
+    .label + .label{
+      &::before {
+        display: inline-block;
+        margin: 0 0.5rem;
+        content: "·";
+        display: inline-block;
+      }
+
+    }
+  }
+  .art-preview {
+    margin-top: 1rem;
+    display: flex;
+    .art-text {
+      width: 0;
+      flex: 1;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      .art-title {
+        font-size: 18px;
+        font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: var(--art-title-color);
+      }
+      .art-content {
+        margin: 13px 0;
+        color: var(--art-content-color);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .art-user-info {
+        ul {
+          display: flex;
+          color: var(--art-user-color);
+          li + li {
+            margin-left: 2.5rem;
+            &:hover {
+              color: var(--link-color);
+            }
+          }
+        }
+      }
+    }
+    // 封面样式
+    .art-cover {
+      flex: 0 0 auto;
+      width: 120px;
+      height: 80px;
+      margin-left: 1.5rem;
+      img {
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+//字体图标
+@font-face {
+  font-family: "iconfont"; /* Project id 3884271 */
+  src: url("//at.alicdn.com/t/c/font_3884271_eo43pnr0b34.woff2?t=1675758513069") format("woff2"),
+    url("//at.alicdn.com/t/c/font_3884271_eo43pnr0b34.woff?t=1675758513069") format("woff"),
+    url("//at.alicdn.com/t/c/font_3884271_eo43pnr0b34.ttf?t=1675758513069") format("truetype");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 0.35rem;
+  color: var(--art-icon-color);
+}

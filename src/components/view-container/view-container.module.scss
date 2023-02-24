@@ -1,0 +1,9 @@
+.view-container {
+  position: relative;
+  display: flex;
+  top: 8.833rem;
+  // width: 80rem; 去掉这行后可实现文章栏的自适应
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 1rem;
+}

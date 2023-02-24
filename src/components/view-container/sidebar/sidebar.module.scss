@@ -1,0 +1,8 @@
+@import '../../../pages/media.scss';
+.sidebar-container {
+  @include media-mini-mobile{
+    display: none;
+  }
+  width: 15rem;
+  margin-left: 1.25rem;
+}
